@@ -1,0 +1,261 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Roboto;
+  src: url("../fonts/Roboto/Roboto-Black.ttf");
+}
+html {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  color: #CACACA;
+  background-color: #08020D;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 90px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 38px;
+  line-height: 57px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 27px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+header {
+  position: absolute;
+  top: 25px;
+  width: 100%;
+  height: max-content;
+  background: transparent;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (min-width: 1240px) {
+  header {
+    max-width: 1200px;
+  }
+}
+.header-container {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+
+.description-container {
+  margin-top: 200px;
+  margin-bottom: 200px;
+  place-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.description-container h1 {
+  text-align: center;
+  margin-bottom: 0;
+}
+.description-container h2 {
+  align-items: center;
+  margin: 0;
+}
+.description-container p {
+  text-align: center;
+  font-weight: 400;
+  margin: 30px 0 0 0;
+}
+
+#page-description {
+  background-image: url("../images/banner.png");
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 1240px) {
+  .description-container {
+    max-width: 1200px;
+  }
+}
+nav {
+  width: max-content;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+nav ul li {
+  margin: 10px;
+}
+nav ul li a {
+  color: #CACACA;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 11px;
+}
+nav ul li a span {
+  color: #fff;
+}
+
+.search {
+  width: max-content;
+}
+.search input {
+  border-radius: 50px;
+  background-color: #3C3B3D;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+.search input::placeholder {
+  padding: 5px 10px 5px;
+}
+
+.description-button {
+  margin: 20px 30px;
+  border-radius: 5px;
+}
+
+.description-logo {
+  height: auto;
+  display: flex;
+  width: max-content;
+  place-items: center;
+}
+.description-logo span {
+  text-transform: uppercase;
+  margin-right: 90px;
+  font-size: 11px;
+}
+.description-logo img {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+}
+
+.access-form {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-left: 20px;
+  min-width: 270px;
+  min-height: 50px;
+  padding: 0;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+.access-form input[type=submit] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  grid-column: span 2;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 0.83rem;
+}
+.access-form input[type=text] {
+  background: transparent;
+  padding: 10px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.access-form input[type=text]::placeholder {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .access-form {
+    grid-template-columns: 1fr;
+  }
+  .access-form input, .access-form input[type=submit] {
+    width: 100%;
+    grid-column: span 1; /* Это поведение по умолчанию */
+  }
+}
+@media (max-width: 414px) {
+  body {
+    width: 100%;
+  }
+  .header-container {
+    width: 100%;
+    display: gird;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto 1fr;
+    margin-left: 20px;
+  }
+  .header-container nav ul {
+    flex-direction: column;
+    margin: 1rem 0 1rem;
+  }
+  .header-container nav ul li {
+    margin: 0;
+    height: 1rem;
+  }
+  .description-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
