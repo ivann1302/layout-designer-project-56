@@ -81,33 +81,6 @@ header {
     max-width: 1200px;
   }
 }
-.header-container {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-}
-
-.description-container {
-  margin-top: 200px;
-  margin-bottom: 200px;
-  place-items: center;
-  display: flex;
-  flex-direction: column;
-}
-.description-container h1 {
-  text-align: center;
-  margin-bottom: 0;
-}
-.description-container h2 {
-  align-items: center;
-  margin: 0;
-}
-.description-container p {
-  text-align: center;
-  font-weight: 400;
-  margin: 30px 0 0 0;
-}
-
 #page-description {
   background-image: url("../images/banner.png");
   background-position: center;
@@ -117,6 +90,33 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.header-container {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+
+.page-description-container {
+  margin-top: 200px;
+  margin-bottom: 200px;
+  place-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.page-description-container h1 {
+  text-align: center;
+  margin-bottom: 0;
+}
+.page-description-container h2 {
+  align-items: center;
+  margin: 0;
+}
+.page-description-container p {
+  text-align: center;
+  font-weight: 400;
+  margin: 30px 0 0 0;
 }
 
 @media (min-width: 1240px) {
@@ -250,7 +250,7 @@ nav ul li a span {
     margin: 0;
     height: 1rem;
   }
-  .description-container {
+  .page-description-container {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -429,6 +429,60 @@ nav ul li a span {
   text-align: center;
   margin: 0;
   padding: 16px 30px;
+}
+
+#page-app {
+  margin: 100px 0 100px;
+  display: grid;
+  justify-content: center;
+}
+#page-app .page-app-container {
+  display: grid;
+  grid-template-columns: 2;
+  grid-column: 1fr 1fr;
+  justify-content: center;
+}
+#page-app .page-app-container .page-app-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+#page-app .page-app-container .description-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 144px;
+  justify-content: center;
+  position: relative;
+  right: 4rem;
+}
+
+@media (min-width: 1240px) {
+  .page-app-container {
+    max-width: 1200px;
+  }
+}
+.page-image-container {
+  width: auto;
+}
+
+.page-app-description {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+}
+.page-app-description .btn {
+  background: #95390C;
+  border: none;
+  border-radius: 32px;
+  height: max-content;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 16px 30px;
+  width: 131px;
 }
 
 /*# sourceMappingURL=styles.css.map */

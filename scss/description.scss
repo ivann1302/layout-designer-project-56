@@ -15,13 +15,25 @@ header {
     }
 }
 
+#page-description {
+    background-image: url('../images/banner.png');
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
 .header-container {
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
 }
 
-.description-container {
+.page-description-container {
     margin-top: 200px;
     margin-bottom: 200px;
     place-items: center;
@@ -44,18 +56,6 @@ header {
         font-weight: 400;
         margin: 30px 0 0 0;
     }
-}
-
-#page-description {
-    background-image: url('../images/banner.png');
-    background-position: center;
-    background-size: cover;
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
 }
 
 @media (min-width: 1240px) {
@@ -204,7 +204,7 @@ nav {
         }
     }
 
-    .description-container {
+    .page-description-container {
         width: 100%;
         display: flex;
         justify-content: center;
