@@ -1,0 +1,65 @@
+.bg-gradient {
+    background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+}
+
+.footer-section {
+    display: grid;
+    margin-top: 3rem;
+    
+    .h2 {
+       font-size: 18px;
+       line-height: 24px;
+       font-weight: bold;
+       text-transform: uppercase; 
+    }
+
+    ul {
+        list-style: none;
+        color: $light-gray;
+        font-weight: normal;
+        padding: 0;
+        
+        li {
+            a {
+                text-decoration: none;
+                color: $light-gray;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1240px) {
+        grid-template-columns: repeat(4, 1fr); // 4 колонки
+        margin: 0 120px;
+
+        .footer-block {
+        max-width: 270px;
+        gap: 40px;
+    }
+}
+
+    @media (max-width: 1239px) {
+        width: max-content;
+        grid-template-rows: repeat(4, 1fr); // 4 ряда
+        margin: 0 20px;
+    }
+
+}
+
+.footer-bottom {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    a {
+        color: $light-gray;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

@@ -485,4 +485,62 @@ nav ul li a span {
   width: 131px;
 }
 
+.bg-gradient {
+  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+}
+
+.footer-section {
+  display: grid;
+  margin-top: 3rem;
+}
+.footer-section .h2 {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.footer-section ul {
+  list-style: none;
+  color: #E0E0E0;
+  font-weight: normal;
+  padding: 0;
+}
+.footer-section ul li a {
+  text-decoration: none;
+  color: #E0E0E0;
+}
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+@media (min-width: 1240px) {
+  .footer-section {
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 120px;
+  }
+  .footer-section .footer-block {
+    max-width: 270px;
+    gap: 40px;
+  }
+}
+@media (max-width: 1239px) {
+  .footer-section {
+    width: max-content;
+    grid-template-rows: repeat(4, 1fr);
+    margin: 0 20px;
+  }
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.footer-bottom a {
+  color: #E0E0E0;
+  text-decoration: none;
+}
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=styles.css.map */
